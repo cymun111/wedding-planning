@@ -1,7 +1,9 @@
 /*******************/
 /******Nav-Bar******/
 /*******************/
-
+nav {
+  background-color: #ecd9c6;
+}
 a{
   padding: 10px;
   padding-left: 10px;
@@ -14,12 +16,6 @@ a:hover {
   text-decoration: none;
   font-style: italic;
   color: #669999;
-}
-div>ul>li>a {
-  border-right: 1px solid #669999;
-}
-div>ul>li.last-child {
-  border-right: none;
 }
 
 
@@ -60,7 +56,7 @@ font-family: 'Dancing Script', cursive;
 /*******************/
 
 .container {
-  max-width: 960px;
+  max-width: 1040px;
   margin: 0 auto;
 }
 section.section:last-child {
@@ -103,9 +99,14 @@ section.section p {
 section.section p:last-child {
   margin-bottom: 0;
 }
-section.section.content {
-  padding: 40px 0;
+section.section.content-1 {
+  padding: 100px 0px;
 }
+
+section.section.content {
+  background-color: #ecd9c6;
+}
+
 section.section.parallax {
   height: 600px;
   background-position: 50% 50%;
@@ -120,27 +121,35 @@ section.section.parallax-1 {
   opacity: 0.9;
 }
 section.section.parallax-2 {
-  background-image: url("/images/2.png");
+  background-image: url("/images/baby-showers/background-2.jpg");
 }
 section.section.parallax-3 {
   background-image: url("/images/3.jpg");
 }
 @media all and (min-width: 600px) {
+  section.section.parallax h1 {
+    font-size: 96px;
+  }
   section.section h2 {
     font-size: 42px;
   }
   section.section p {
-    font-size: 20px;
-  }
-  section.section.parallax h1 {
-    font-size: 96px;
+    font-size: 25px;
   }
 }
 @media all and (min-width: 960px) {
   section.section.parallax h1 {
-    font-size: 160px;
+    font-size: 120px;
+  }
+  section.section h2 {
+    font-size: 60px;
+  }
+  section.section p {
+    font-size: 35px;
   }
 }
+
+
 /***************************************/
 /**************CAROUSEL*****************/
 /***************************************/
@@ -219,338 +228,72 @@ section.section.parallax-3 {
   left: 47%;
   transform: translate(-50%, -50%) rotate(-45deg);
 }
+img.col-sm {
+  height: 100%;
+  padding: 0px;
+  position: ;
+}
+.image-wrapper {
+  margin: 0px;
+  padding: 0px;
+  width: 33.3%;
+}
 
 /****************************************/
 /***********EXPERIENCE PAGE**************/
 /****************************************/
 
-/*HTML Experience*/
-section.parallax-1 div > div:nth-child(1) {
-    height: 250px;
-    width: 250px;
-    right: 16.9%;
-    margin-top: 2%;
-    display:inline;
-    background-image: url("/images/Html5-logo.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-}
-/*CSS Experience*/
-section.parallax-1 div > div:nth-child(2) {
-    height: 250px;
-    width: 250px;
-    right: 41.9%;
-    margin-top: 2%;
-    display: inline;
-    background-image: url("/images/CSS3.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-}
-/*JavaScript Experience*/
-section.parallax-1 div > div:nth-child(3) {
-    height: 250px;
-    width: 250px;
-    right: 66.9%;
-    margin-top: 2%;
-    background-image: url("/images/Javascript.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-}
-/*Angular Experience*/
-section.parallax-1 div > div:nth-child(4) {
-   height: 250px;
-   width: 240px;
-   right: 59.8%;
-   margin-top: 17%;
-   background-image: url("/images/Angular-logo.png");
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   position: absolute;
-}
-/*NodeJS Experience*/
-section.parallax-1 div > div:nth-child(5) {
-   height: 250px;
-   width: 400px;
-   right: 22.5%;
-   margin-top: 17%;
-   background-image: url("/images/nodejs-logo.png");
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   position: absolute;
-}
 
-/*All Skill Bubbles*/
-section.parallax-1.container div{
-   width: 100%;
-}
-@media (max-width: 425px) {
-  div.containerHTML{
-    max-height: 100px;
-    max-width: 100px;
-    padding: 15px;
-    right: 50%;
-    margin-top: 5%;
-    display: block;
-  }
-  div.containerJS{
-    max-height: 100px;
-    max-width: 100px;
-    padding: 15px;
-    right: 50%;
-    margin-top: 20%;
-    display: block;
-  }
-  div.containerCSS{
-    max-height: 100px;
-    max-width: 100px;
-    padding: 15px;
-    right: 50%;
-    margin-top: 35%;
-    display: block;
-  }
-  div.containerNode{
-    max-height: 100px;
-    max-width: 175px;
-    padding: 15px;
-    right: 50%;
-    margin-top: 45%;
-    display: block;
-  }
-  div.containerAngular{
-    max-height: 100px;
-    max-width: 100px;
-    padding: 15px;
-    right: 50%;
-    margin-top: 55%;
-    display: block;
-  }
-}
-@media (width: 768px) {
-  section.parallax-1 div > div:nth-child(1){
-    height: 175px;
-    width: 175px;
-    right: 13.4%;
-    margin-top: 5%;
-  }
-  section.parallax-1 div > div:nth-child(2){
-    height: 175px;
-    width: 175px;
-    right: 38.5%;
-    margin-top: 5%;
-  }
-  section.parallax-1 div > div:nth-child(3){
-    height: 175px;
-    width: 175px;
-    right: 63.5%;
-    margin-top: 5%;
-  }
-  section.parallax-1 div > div:nth-child(4){
-    height: 175px;
-    width: 165px;
-    margin-top: 35%;
-    right: 54.9%;
-  }
-  section.parallax-1 div > div:nth-child(5){
-    height: 175px;
-    width: 275px;
-    margin-top: 35%;
-    right: 15.4%;
-  }
-}
-
-@media (width: 1024px) {
-  section.parallax-1 div > div:nth-child(1){
-    height: 200px;
-    width: 200px;
-    right: 13%;
-  }
-  section.parallax-1 div > div:nth-child(2){
-    height: 200px;
-    width: 200px;
-    right: 40%;
-  }
-  section.parallax-1 div > div:nth-child(3){
-    height: 200px;
-    width: 200px;
-    right: 65%;
-  }
-  section.parallax-1 div > div:nth-child(4){
-    height: 210px;
-    width: 200px;
-    right: 56.6%;
-    margin-top: 27%;
-  }
-  section.parallax-1 div > div:nth-child(5){
-    height: 205px;
-    width: 330px;
-    right: 19%;
-    margin-top: 27%;
-  }
-}
-  @media (width: 1440px) {
-    section.parallax-1 div > div:nth-child(1){
-      max-height: 300px;
-      max-width: 300px;
-      right: 13%;
-    }
-    section.parallax-1 div > div:nth-child(2){
-      max-height: 300px;
-      max-width: 300px;
-      right: 39.5%;
-    }
-    section.parallax-1 div > div:nth-child(3){
-      max-height: 300px;
-      max-width: 300px;
-      right: 64.6%;
-    }
-    section.parallax-1 div > div:nth-child(4){
-      height: 257px;
-      width: 245px;
-      right: 58%;
-      margin-top: 22%;
-    }
-    section.parallax-1 div > div:nth-child(5){
-      height: 276px;
-      width: 450px;
-      right: 20.3%;
-      margin-top: 21.2%;
-    }
-}
-margin-top: 22%;
-  @media (width: 2560px) {
-    section.parallax-1 div > div:nth-child(1){
-      height: 450px;
-      width: 450px;
-      right: 14%;
-      margin-top: 2%;
-    }
-    section.parallax-1 div > div:nth-child(2){
-      height: 450px;
-      width: 450px;
-      right: 39.4%;
-      margin-top: 2%;
-    }
-    section.parallax-1 div > div:nth-child(3){
-      height: 450px;
-      width: 450px;
-      right: 64.3%;
-      margin-top: 2%;
-    }
-}
-  /* section.parallax-1.container:nth-child(1){
-    max-height: 200px;
-    max-width: 325px;
-    padding: 15px;
-  }
-  section.parallax-1.container:nth-child(1){
-    max-height: 200px;
-    max-width: 200px;
-    padding: 15px;
-  } */
-
-/*Git Experience*/
-div.containerGit {
-   height: 120px;
-   width: 120px;
-   right: 28%;
-   margin-top: 38%;
-}
-div.containerGit:hover {
-   height: 140px;
-   width: 140px;
-}
-/*jQuery Experience*/
-div.containerjQuery {
-   height: 150px;
-   width: 150px;
-   right: 8%;
-   margin-top: 1%;
-}
-div.containerjQuery:hover {
-   height: 180px;
-   width: 180px;
-}
-/*ES6 Experience*/
-div.containerES6 {
-   height: 130px;
-   width: 130px;
-   right: 30%;
-   margin-top: 22%;
-}
-div.containerES6:hover {
-   height: 150px;
-   width: 150px;
-}
-/*noSQL Experience*/
-div.containernoSQL {
-   height: 160px;
-   width: 160px;
-   right: 35%;
-   margin-top: 30%;
-}
-div.containernoSQL:hover {
-   height: 180px;
-   width: 180px;
-}
-/*SQL Experience*/
-div.containerSQL {
-   height: 130px;
-   width: 130px;
-   right: 38%;
-   margin-top: 1%;
-}
-div.containerSQL:hover {
-   height: 165px;
-   width: 165px;
-}
-/*JSON Experience*/
-div.containerJSON {
-   height: 125px;
-   width: 125px;
-   right: 38%;
-   margin-top: 39%;
-}
-div.containerJSON:hover {
-   height: 150px;
-   width: 150px;
-}
-/*Bootstrap Experience*/
-div.containerBootstrap {
-   height: 260px;
-   width: 260px;
-   right: 37%;
-   margin-top: 13%;
-}
-div.containerBootstrap:hover {
-   height: 280px;
-   width: 280px;
-}
 /****************************************/
 /*************ABOUT PAGE*****************/
 /****************************************/
 
+section.section.content.about {
+  border-bottom: 5px solid #392613;
+  padding-bottom: 150px;
+  padding-top: 150px;
+}
 
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  top: 0;
+  width: 600px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+section.section.content.about img {
+  border-radius: 25%;
+  float: left;
+  padding: 25px;
+}
 
 /****************************************/
 /*************CONTACT PAGE***************/
 /****************************************/
-div.containerContact{
-  position: absolute;
-  right: 33%;
-  margin-top: 5%;
-  background-image: linear-gradient(90deg, rgba(255, 255, 255, .0), rgba(153, 235, 255, .7) 30%, 80%, rgba(255, 255, 255, .0) 100%);
+section>div.containerContact{
+  margin-left: 70px;
 }
-div.containerContact h1, form{
-margin-left: 13%;
-font-family: 'Raleway', cursive;
+section.section.contact{
+  padding-bottom: 50px;
 }
 /****************************************/
 /**************HOME PAGE*****************/
@@ -575,4 +318,22 @@ div.home h1{
   font-size: 3em;
   font-family:'Raleway', cursive;
   background-image: linear-gradient(0deg, rgba(255, 255, 255, .5), rgba(153, 235, 255, 1) 30%, 80%, rgba(255, 255, 255, .5) 100%);
+}
+
+/***************************************/
+/****************FOOTER*****************/
+/***************************************/
+section.section.content.footer {
+  background-color: #392613;
+  color: white;
+  padding-top: 15px;
+  border-top: 10px #c68c53 inset;
+}
+section>div>div.col-sm {
+
+  padding-left: 80px;
+  font-family: 'Viaoda Libre';
+}
+section>div.footer>div>ul {
+  list-style-type: none;
 }

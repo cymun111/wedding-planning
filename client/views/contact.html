@@ -1,32 +1,67 @@
-<div class="containerContact col-sm-4 align-items-center">
-  <h1>Please Contact Me!</h1>
-  <form>
-    <div class="form-group">
-    <p>
-      <label>Name</label>
-      <input class="form-control col-sm-10" type="text" ng-model="Ccontroller.contact.name">
-    </p>
-    <p>
-      <label>Company</label>
-      <input class="form-control col-sm-10" type="text" ng-model="Ccontroller.contact.company">
-    </p>
-    <p>
-      <label>Email Address</label>
-      <input class="form-control col-sm-10" type="email" ng-model="Ccontroller.contact.email">
-    </p>
-    <p>
-      <label>Phone Number</label>
-      <input class="form-control col-sm-10" type="text" ng-model="Ccontroller.contact.phone">
-    </p>
-    <p class="full">
-      <label>Message</label>
-      <textarea class="form-control col-sm-10" ng-model="Ccontroller.contact.message" rows="5"></textarea>
-    </p>
-    <p class="full">
-      <button class="btn btn-md btn-dark" ng-click="Ccontroller.sendContactEmail()">Submit</button>
-    </p>
-    <a href="https://www.linkedin.com/in/kenyon-westbrook-907644155/"><img src="../images/linkedin.png" alt=""></a>
-     <a href="https://github.com/cymun111"><img src="../images/github.png" alt=""></a>
+<section class="section content contact">
+    <h1>Please Contact Us with any questions!</h1>
+  <div class="containerContact col-sm-4 align-items-center">
+    <form>
+      <div class="form-group">
+      <p>
+        <label>Name</label>
+        <input class="form-control col-sm-10" type="text" ng-model="Ccontroller.contact.name">
+      </p>
+      <p>
+        <label>Email Address</label>
+        <input class="form-control col-sm-10" type="email" ng-model="Ccontroller.contact.email">
+      </p>
+      <p>
+        <label>Phone Number</label>
+        <input class="form-control col-sm-10" type="text" ng-model="Ccontroller.contact.phone">
+      </p>
+      <p class="full">
+        <label>Message</label>
+        <textarea class="form-control col-sm-10" ng-model="Ccontroller.contact.message" rows="5"></textarea>
+      </p>
+      <p class="full">
+        <button class="btn btn-md btn-dark" ng-click="Ccontroller.sendContactEmail()">Submit</button>
+      </p>
+      </div>
+    </form>
   </div>
-  </form>
-</div>
+</section>
+<section class="section content footer">
+  <div class="footer row">
+    <div class="col-sm">
+      <h3>Services we offer</h3>
+      <ul>
+          <li>Birthdays</li>
+          <li>Anniversaries</li>
+          <li>Graduation</li>
+          <li>Engagement</li>
+          <li>Wedding/Reception</li>
+          <li>Baby Shower</li>
+          <li>Gender Reveal</li>
+          <li>Retirement</li>
+          <li>Celebration of Life</li>
+      </ul>
+    </div>
+    <div class="col-sm">
+      <h3>Hours</h3>
+      <ul>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thursday</li>
+        <li>Friday</li>
+        <li>Saturday</li>
+        <li>Sunday</li>
+      </ul>
+    </div>
+    <div class="col-sm">
+      <h3>Contact Us</h3>
+      <ul>
+        <li>Address</li>
+        <li>Phone</li>
+        <li>Email</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
