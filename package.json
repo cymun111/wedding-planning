@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@uirouter/angularjs": "^1.0.14",
-    "angular": "^1.6.9",
+    "angular": "^1.8.0",
     "angular-bootstrap-npm": "^0.14.3",
     "angular-resource": "^1.6.9",
     "babel": "^6.23.0",
