@@ -24,7 +24,7 @@
     "express": "^4.16.4",
     "file-loader": "^2.0.0",
     "jquery": "^3.4.0",
-    "nodemailer": "^4.6.8",
+    "nodemailer": "^6.4.16",
     "path": "^0.12.7",
     "style-loader": "^0.23.1",
     "webpack": "^3.10.0",
